@@ -1,0 +1,42 @@
+@font-face {
+  font-family: man-icon;
+  src: url(https://www.man.eu/de/media/ntg_resources/assets/fonts/man_icon/man_icon_eot.eot?ho7mui);
+  src: url(https://www.man.eu/de/media/ntg_resources/assets/fonts/man_icon/man_icon_eot.eot?ho7mui#iefix) format('embedded-opentype'), url(https://www.man.eu/de/media/ntg_resources/assets/fonts/man_icon/man_icon_woff2.woff2?ho7mui) format('woff2'), url(https://www.man.eu/de/media/ntg_resources/assets/fonts/man_icon/man_icon_ttf.ttf?ho7mui) format('truetype'), url(https://www.man.eu/de/media/ntg_resources/assets/fonts/man_icon/man_icon_woff.woff?ho7mui) format('woff'), url(https://www.man.eu/de/media/ntg_resources/assets/fonts/man_icon/man_icon_svg.svg?ho7mui#man-icon) format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-display: block
+}
+
+[class*=" icon-"]:before,
+[class^=icon-]:before {
+  font-family: man-icon !important;
+  speak: never;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+@font-face {
+  font-family: MAN-regular;
+  font-display: block;
+  src: url(https://www.man.eu/de/media/ntg_resources/assets/fonts/man/maneuropecondensed_regular_eot.eot) format("eot"), url(https://www.man.eu/de/media/ntg_resources/assets/fonts/man/maneuropecondensed_regular_woff2.woff2) format("woff2"), url(https://www.man.eu/de/media/ntg_resources/assets/fonts/man/maneuropecondensed_regular_woff.woff) format("woff"), url(https://www.man.eu/de/media/ntg_resources/assets/fonts/man/maneuropecondensed_regular_ttf.ttf) format("truetype"), url(https://www.man.eu/de/media/ntg_resources/assets/fonts/man/maneuropecondensed_regular_svg.svg) format("svg");
+  font-weight: 400
+}
+
+@font-face {
+  font-family: MAN-bold;
+  font-display: block;
+  src: url(https://www.man.eu/de/media/ntg_resources/assets/fonts/man/maneuropecondensed_bold_eot.eot) format("eot"), url(https://www.man.eu/de/media/ntg_resources/assets/fonts/man/maneuropecondensed_bold_woff2.woff2) format("woff2"), url(https://www.man.eu/de/media/ntg_resources/assets/fonts/man/maneuropecondensed_bold_woff.woff) format("woff"), url(https://www.man.eu/de/media/ntg_resources/assets/fonts/man/maneuropecondensed_bold_ttf.ttf) format("truetype"), url(https://www.man.eu/de/media/ntg_resources/assets/fonts/man/maneuropecondensed_bold_svg.svg) format("svg");
+  font-weight: 700
+}
+
+@font-face {
+  font-family: MAN-light;
+  font-display: block;
+  src: url(https://www.man.eu/de/media/ntg_resources/assets/fonts/man/maneurope_light_eot.eot) format("eot"), url(https://www.man.eu/de/media/ntg_resources/assets/fonts/man/maneurope_light_woff2.woff2) format("woff2"), url(https://www.man.eu/de/media/ntg_resources/assets/fonts/man/maneurope_light_woff.woff) format("woff"), url(https://www.man.eu/de/media/ntg_resources/assets/fonts/man/maneurope_light_ttf.ttf) format("truetype"), url(https://www.man.eu/de/media/ntg_resources/assets/fonts/man/maneurope_light_svg.svg) format("svg");
+  font-weight: 400
+}
