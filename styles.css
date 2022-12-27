@@ -1,3 +1,4 @@
+/* FONT FACES */
 @font-face {
   font-family: MAN-regular;
   font-display: block;
@@ -19,20 +20,124 @@
   font-weight: 400
 }
 
+:root {
+  --grey-text: #303c49;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* text-rendering: optimizeLegibility; */
+  text-rendering: geometricPrecision;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #101010;
+}
+
+/* TYPOGRAPHY AND UTILITY CLASSES */
 .light-text {
   font-family: 'MAN-light', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
+
 .regular-text {
   font-family: 'MAN-regular', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
 }
-.bold-text {
+
+h1.BOLD {
   font-family: 'MAN-bold', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2.75rem;
+  color: var(--grey-text);
 }
 
+/* NAVBAR */
+nav.navbar {
+  height: 10vh;
+  max-height: 55px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.brand-logo {
+  width: 200px;
+  margin: 0 1rem;
+}
+
+nav ul.mobile {
+  display: none;
+}
+
+nav ul.desktop {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+nav ul li {
+  height: 100%;
+  list-style: none;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  font-family: 'MAN-bold', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+}
+
+nav .nav-link {
+  height: 115%;
+  transform: skew(-15deg);
+  transition: all 0.2s ease-out;
+  display: flex;
+  align-items: center;
+  color: var(--grey-text);
+}
+
+nav .nav-link:hover {
+  background-color: #d31c1c;
+  color: #fff;
+  /* transform: skew(-15deg); */
+}
+
+nav li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--grey-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* text-rendering: optimizeLegibility; */
+  text-rendering: geometricPrecision;
+  color: var(--grey-text);
+}
+
+@media (max-width: 880px) {
+  nav ul.desktop {
+    display: none;
+  }
+  nav ul.mobile {
+    display: block;
+  }
+}
