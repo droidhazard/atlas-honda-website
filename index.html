@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,17 @@
   <title>Atlas Honda: Leading Motorcycle Manufacturer in Pakistan</title>
   <link rel="shortcut icon" href="./images/honda-atlas.jpg" type="image/x-icon">
   <!-- FontAwesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Import SwiperJS CSS -->
+  <link rel="stylesheet" href="./libraries/swiper-bundle.css">
   <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
   <nav class="navbar">
     <li><a href="./"><img src="./images/2560px-Honda_logo.svg.png" alt="" class="brand-logo"></a></li>
@@ -24,7 +30,7 @@
       <li><a href="#!" class="nav-link">CONTACT US</a></li>
     </ul>
     <ul class="mobile">
-      <a href="#!" data-trigger="mobile-menu" id="nav-trigger"><i class="material-icons icon">menu</i></a>
+      <a href="#!" data-trigger="mobile-menu" id="nav-trigger"><i class="material-icons icon" id="hamburger">menu</i></a>
     </ul>
     <div class="mobile-menu" id="mobile-menu">
       <ul>
@@ -37,14 +43,76 @@
     </div>
   </nav>
 
+  <main>
+    <!-- HERO SECTION / SWIPER JS -->
+    <div class="hero-section">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="slide-hero-info">
+              
+            </div>
+            <img class="swiper-image" src="./images/hero-section/cb150f.png" alt="" srcset="">
+          </div>
+          <!-- <div class="swiper-slide">
+            <img class="swiper-image" src="./images/hero-section/1920x860-1536x688 (1).jpg" alt="" srcset="">
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-image" src="./images/hero-section/CD-70-banner-slider-1536x688.jpg" alt="">
+          </div> -->
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
 
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
+  </main>
   <h1 class="light-text">HELLO WORLD Light Font</h1>
   <h1 class="regular-text">HELLO WORLD Regular Font</h1>
-  <p class="regular-text">The modular design allows for configuration of three versions for intercity and three versions for city use.</p>
-  <p class="light-text">The modular design allows for configuration of three versions for intercity and three versions for city use.</p>
+  <p class="regular-text">The modular design allows for configuration of three versions for intercity and three versions
+    for city use.</p>
+  <p class="light-text">The modular design allows for configuration of three versions for intercity and three versions
+    for city use.</p>
   <h1 class="BOLD">HELLO WORLD Bold Font</h1>
 
+  <!-- Import SwiperJS script -->
+  <script src="./libraries/swiper-bundle.min.js"></script>
   <!-- Custom Javascript -->
   <script src="./main.js"></script>
+
+  <!-- Initialize SwiperJS -->
+  <script>
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      // scrollbar: {
+      //   el: '.swiper-scrollbar',
+      // },
+    });
+  </script>
 </body>
+
 </html>

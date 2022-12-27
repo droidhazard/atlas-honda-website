@@ -22,6 +22,18 @@
 
 :root {
   --grey-text: #303c49;
+  --accent-red: #d31c1c;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: #fff;
+  background: var(--accent-red);
+}
+
+::selection {
+  color: #fff;
+  background: var(--accent-red);
 }
 
 * {
@@ -41,7 +53,8 @@ body {
 }
 
 body {
-  background-color: #101010;
+  /* background-color: #101010; */
+  /* background-color: #fff; */
 }
 
 /* TYPOGRAPHY AND UTILITY CLASSES */
@@ -99,6 +112,7 @@ nav .mobile-menu {
   top: 0;
   left: -200px;
   transition: all 0.2s ease-out;
+  z-index: 999;
 }
 
 nav .mobile-menu>ul {
@@ -143,13 +157,13 @@ nav .nav-link {
 }
 
 nav .nav-link:hover {
-  background-color: #d31c1c;
+  background-color: var(--accent-red);
   color: #fff;
   /* transform: skew(-15deg); */
 }
 
 .nav-active {
-  background-color: #d31c1c;
+  background-color: var(--accent-red);
   color: #fff !important;
   border-bottom: 2px solid #fff;
 }
@@ -159,6 +173,34 @@ nav li {
   display: flex;
   align-items: center;
 }
+
+/* HERO SECTION */
+.hero-section {
+  height: 85vh;
+  max-height: 490px;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(13, 13, 13, 1) 0%, rgba(20, 20, 20, 1) 20%, rgba(13, 13, 13, 1) 43%, rgba(20, 20, 20, 1) 71%, rgba(13, 13, 13, 1) 100%);
+  /* background: #fff; */
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.swiper-image {
+  width: 50%;
+  background-position: right;
+}
+
+.swiper-slide {
+  /* background-color: greenyellow; */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
 
 
 
@@ -174,4 +216,17 @@ nav li {
   nav ul.mobile {
     display: block;
   }
+
+  .swiper-image {
+    width: 100%;
+    background-position: right;
+  }
+
+  .swiper-slide {
+    /* background-color: greenyellow; */
+    text-overflow: ellipsis;
+    display: flex;
+    flex-direction: column;
+  }
+
 }
