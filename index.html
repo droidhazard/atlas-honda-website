@@ -6,22 +6,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Atlas Honda: Leading Motorcycle Manufacturer in Pakistan</title>
   <link rel="shortcut icon" href="./images/honda-atlas.jpg" type="image/x-icon">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <nav class="navbar">
-    <li><img src="./images/2560px-Honda_logo.svg.png" alt="" class="brand-logo"></li>
+    <li><a href="./"><img src="./images/2560px-Honda_logo.svg.png" alt="" class="brand-logo"></a></li>
     <ul class="desktop">
-      <li><a href="#!" class="nav-link">PRODUCTS</a></li>
+      <li><a href="#!" class="nav-link nav-active">PRODUCTS</a></li>
       <li><a href="#!" class="nav-link">FIND A DEALER</a></li>
       <li><a href="#!" class="nav-link">SERVICE AND WARRANTY</a></li>
       <li><a href="#!" class="nav-link">INSTALLMENT PLANS</a></li>
       <li><a href="#!" class="nav-link">CONTACT US</a></li>
     </ul>
     <ul class="mobile">
-      <a href="">MENU</a>
+      <a href="#!" data-trigger="mobile-menu" id="nav-trigger"><i class="material-icons icon">menu</i></a>
     </ul>
+    <div class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="#!" class="nav-link nav-active">PRODUCTS</a></li>
+        <li><a href="#!" class="nav-link">FIND A DEALER</a></li>
+        <li><a href="#!" class="nav-link">SERVICE AND WARRANTY</a></li>
+        <li><a href="#!" class="nav-link">INSTALLMENT PLANS</a></li>
+        <li><a href="#!" class="nav-link">CONTACT US</a></li>
+      </ul>
+    </div>
   </nav>
 
 
