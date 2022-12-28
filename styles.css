@@ -238,7 +238,21 @@ nav li {
   align-items: center;
 }
 
+/* NEWS AND EVENTS SECTION */
+.news-events {
+  height: 700px;
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+}
 
+.news-card {
+  background-color: #cccccc;
+  width: 100%;
+  height: 200px;
+  border: 1px solid red;
+  margin: 5px 0;
+}
 
 
 
