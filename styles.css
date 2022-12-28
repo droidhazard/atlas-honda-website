@@ -318,11 +318,15 @@ a.news-readmore i:hover {
   width: 100%;
   background-color: #060606;
   padding: 2rem;
-}
-
-.footer-row {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
@@ -332,6 +336,31 @@ a.news-readmore i:hover {
   font-size: 1.5rem;
   padding: 5px 10px;
   margin: 0 10px 10px 0;
+}
+
+a.footer-link {
+  height: 30px;
+  text-decoration: none;
+  font-family: 'MAN-regular';
+  color: #fff;
+  padding: 5px;
+}
+a.footer-link:hover {
+  background-color: #202020;
+
+}
+a.footer-link::after {
+  content: "";
+  display: block;
+  margin: left;
+  background-color: var(--accent-red);
+  height: 2px;
+  width: 0;
+  left: 0;
+  transition: all 0.5s ease-in-out;
+}
+a.footer-link:hover:after {
+  width: 100%;
 }
 
 
@@ -424,6 +453,18 @@ a.news-readmore i:hover {
     right: 0;
   }
 
+  .footer-row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+@media (max-width: 630px) {
+  .page-footer {
+    flex-direction: column;
+  }
 }
 
 
