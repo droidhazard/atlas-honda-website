@@ -226,6 +226,7 @@ nav li {
   align-items: center;
   transition: all 0.2s ease-out;
 }
+
 .readmore {
   border: 2px solid #000;
   text-decoration: none;
@@ -252,7 +253,59 @@ nav li {
   height: 200px;
   border: 1px solid red;
   margin: 5px 0;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
+
+.news-thumbnail {
+  height: 100%;
+}
+
+.news-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.news-title {
+  font-family: 'MAN-bold', sans-serif;
+  font-weight: bold;
+  font-size: 2.75rem;
+  color: var(--grey-text);
+}
+
+.news-date {
+  background-color: #6f6f6f;
+  color: #fff;
+  padding: 5px 10px;
+  margin-bottom: 0.5rem;
+}
+
+a.news-readmore {
+  width: 200px;
+  text-decoration: none;
+}
+
+a.news-readmore i {
+  background-color: #202020;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-out;
+
+}
+
+a.news-readmore i:hover {
+  background-color: #060606;
+  font-size: 3rem;
+}
+
 
 
 
@@ -260,7 +313,7 @@ nav li {
 
 /* Media Queries */
 
-@media screen and (max-width: 1280px ){
+@media screen and (max-width: 1280px) {
   .swiper-image {
     width: 100%;
     background-position: right;
@@ -272,9 +325,11 @@ nav li {
     display: flex;
     flex-direction: column;
   }
+
   .bike-name {
     width: 100%;
   }
+
   .info {
     height: 50px;
     width: 100%;
@@ -301,12 +356,45 @@ nav li {
     display: flex;
     flex-direction: column;
   }
+
   .bike-name {
     width: 100%;
   }
+
   .info {
     height: 50px;
     width: 100%;
+  }
+
+  .news-card {
+    position: relative;
+  }
+
+  .news-thumbnail {
+    width: 100%;
+    filter: brightness(0.5);
+  }
+
+  .news-info {
+    position: absolute;
+    color: #fff;
+  }
+
+  .news-title {
+    font-family: 'MAN-regular';
+    color: #fff;
+  }
+
+  .news-date {
+    top: 150px;
+    position: absolute;
+  }
+
+  a.news-readmore {
+    position: absolute;
+    height: 100%;
+    width: 50px;
+    right: 0;
   }
 
 }
