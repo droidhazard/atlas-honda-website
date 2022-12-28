@@ -251,7 +251,6 @@ nav li {
   background-color: #cccccc;
   width: 100%;
   height: 200px;
-  border: 1px solid red;
   margin: 5px 0;
   display: flex;
   flex-direction: row;
@@ -320,7 +319,6 @@ a.news-readmore i:hover {
   }
 
   .swiper-slide {
-    /* background-color: greenyellow; */
     text-overflow: ellipsis;
     display: flex;
     flex-direction: column;
