@@ -313,6 +313,27 @@ a.news-readmore i:hover {
   /* background-color: yellow; */
 }
 
+/* FOOTER */
+.page-footer {
+  width: 100%;
+  background-color: #060606;
+  padding: 2rem;
+}
+
+.footer-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.footer-row-title {
+  background-color: #cccccc;
+  font-family: 'MAN-bold', sans-serif;
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  margin: 0 10px 10px 0;
+}
+
 
 
 
