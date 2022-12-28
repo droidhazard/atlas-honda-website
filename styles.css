@@ -189,6 +189,7 @@ nav li {
   width: 100%;
   height: 100%;
   display: flex;
+  transition: all 0.2s ease-out;
 }
 
 .swiper-image {
@@ -305,7 +306,12 @@ a.news-readmore i:hover {
   font-size: 3rem;
 }
 
-
+/* BOTTOM SLIDER */
+.bottom-slider {
+  padding: 40px;
+  height: 80%;
+  /* background-color: yellow; */
+}
 
 
 
@@ -370,6 +376,7 @@ a.news-readmore i:hover {
 
   .news-thumbnail {
     width: 100%;
+    object-fit: cover;
     filter: brightness(0.5);
   }
 
@@ -380,6 +387,7 @@ a.news-readmore i:hover {
 
   .news-title {
     font-family: 'MAN-regular';
+    font-size: 1.5rem;
     color: #fff;
   }
 

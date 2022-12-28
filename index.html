@@ -20,6 +20,7 @@
 </head>
 
 <body>
+  <!-- NAVBAR -->
   <nav class="navbar">
     <li><a href="./"><img src="./images/2560px-Honda_logo.svg.png" alt="" class="brand-logo"></a></li>
     <ul class="desktop">
@@ -45,7 +46,7 @@
   </nav>
 
   <main>
-    <!-- HERO SECTION / SWIPER JS -->
+    <!-- HERO SECTION w/ SWIPER JS -->
     <div class="hero-section">
       <!-- Slider main container -->
       <div class="swiper">
@@ -127,7 +128,7 @@
         <div class="swiper-button-next"></div>
 
         <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
+        <!-- <div class="swiper-scrollbar"></div> -->
       </div>
     </div>
 
@@ -171,6 +172,29 @@
         </div>
       </div>
     </div>
+
+    <!-- BOTTOM SLIDER w/ SWIPER JS -->
+    <div class="bottom-slider">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/bottom-slider/bottom-slider1.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/bottom-slider/bottom-slider2.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/bottom-slider/bottom-slider3.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/bottom-slider/bottom-slider4.jpg" alt="">
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+      </div>
+    </div>
   </main>
 
 
@@ -189,27 +213,52 @@
 
   <!-- Initialize SwiperJS -->
   <script>
-    const swiper = new Swiper('.swiper', {
-      // Optional parameters
-      direction: 'horizontal',
-      loop: true,
+    // Hero Section
+    // const swiper = new Swiper('.swiper', {
+    //   // Optional parameters
+    //   direction: 'horizontal',
+    //   effect: 'cube',
+    //   loop: true,
 
-      // If we need pagination
-      pagination: {
-        el: '.swiper-pagination',
-      },
+    //   // If we need pagination
+    //   pagination: {
+    //     el: '.swiper-pagination',
+    //   },
 
-      // Navigation arrows
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
+    //   // Navigation arrows
+    //   navigation: {
+    //     nextEl: '.swiper-button-next',
+    //     prevEl: '.swiper-button-prev',
+    //   },
 
-      // And if we need scrollbar
-      // scrollbar: {
-      //   el: '.swiper-scrollbar',
-      // },
-    });
+    //   // And if we need scrollbar
+    //   // scrollbar: {
+    //   //   el: '.swiper-scrollbar',
+    //   // },
+    // });
+    var swiper = new Swiper(".swiper", {
+        grabCursor: true,
+        effect: "creative",
+        loop: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        creativeEffect: {
+          prev: {
+            shadow: true,
+            translate: [0, 0, -400],
+          },
+          next: {
+            translate: ["100%", 0, 0],
+          },
+        },
+      });
+
+    // BOTTOM SLIDER
+
   </script>
 </body>
 
