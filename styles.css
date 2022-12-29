@@ -367,10 +367,10 @@ a.footer-link:hover:after {
 }
 
 /* CONTACT US FORM */
-form.contact-us-form {
+.container {
   margin: 3rem 5rem;
 }
-.contact-us-form-wrapper {
+.container-wrapper {
   margin-top: 20px;
   gap: 20px;
   display: flex;
@@ -402,6 +402,14 @@ button:hover {
 .submit-area {
   display: flex;
   justify-content: flex-end;
+}
+
+/* FIND A DEALER */
+.dealership-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
 }
 
 
@@ -500,7 +508,7 @@ button:hover {
     align-items: center;
   }
 
-  form.contact-us-form {
+  .container {
     margin: 2rem 2rem;
   }
 
