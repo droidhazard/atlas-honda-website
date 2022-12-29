@@ -404,15 +404,20 @@ button:hover {
   justify-content: flex-end;
 }
 
-/* FIND A DEALER */
-.dealership-wrapper {
+/* INSTALLMENT PLANS */
+.bank-stack {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 90vh;
+  flex-direction: row;
 }
-
-
+.bank-image img{
+  width: 400px;
+  height: auto;
+  max-width: 100%;
+}
+.bank-info {
+  padding: 0 1rem;
+  line-height: 1.5;
+}
 
 
 /* Media Queries */
@@ -510,6 +515,10 @@ button:hover {
 
   .container {
     margin: 2rem 2rem;
+  }
+  .bank-stack {
+    display: flex;
+    flex-direction: column;
   }
 
 }
